@@ -1,9 +1,14 @@
-function App() {
+import Reviews from "./reviews/reviews";
+
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <h1 className="pageTitle">Our Reviews</h1>
+      <div className="testimonial-container">
+        <Reviews />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

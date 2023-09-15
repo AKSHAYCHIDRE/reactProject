@@ -1,0 +1,26 @@
+.categoryItem {
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+.categoryList {
+    display: flex;
+    list-style: none;
+    padding: 0 15px;
+}
+.categoryItemButton {
+    background-color: transparent;
+    padding: 4px 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}   
+.categoryItemButton.active {
+    border: 0;
+    border-bottom: 1px solid;
+}
+.categoryItemButton:hover {
+    border: 0;
+    border-bottom: 1px solid;
+}

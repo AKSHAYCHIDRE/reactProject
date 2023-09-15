@@ -1,0 +1,39 @@
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.subTitle {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.productName {
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.productPrice {
+    font-weight: 800;
+    font-size: 18px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    color: #141416;
+    width: calc(25% - 30px);
+    margin: 0 15px 30px 15px;
+}
+.product .productImage {
+    width: 100%;
+    padding-bottom: 20px;
+    transition: transform 1s;
+}
+.product:hover .productImage {
+    transform: scale(1.03);
+}

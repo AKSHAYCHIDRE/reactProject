@@ -1,9 +1,9 @@
 import { useState } from "react";
 
+import "../src/index.css";
 import productData from "./singleProduct/data";
 import Categories from "./categories/categories";
 import SingleProduct from "./singleProduct/singleProduct";
-import "../src/index.css";
 
 const allCategories = [
   "all",
@@ -19,8 +19,6 @@ const App = () => {
       return;
     }
 
-
-
     const newFilterItems = productData.filter(
       (item) => item.category === category
     );
@@ -30,7 +28,7 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <Categories allCategories={allCategories} filterItems={filterItems} />
+        <Categories  allCategories={allCategories} filterItems={filterItems} />
         <div className="productList">
           <SingleProduct productData={product} />
         </div>

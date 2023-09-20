@@ -1,39 +1,72 @@
 .productList {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .subTitle {
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: capitalize;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: capitalize;
 }
 .productName {
-    text-transform: capitalize;
-    font-weight: 500;
-    padding-bottom: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .productPrice {
-    font-weight: 800;
-    font-size: 18px;
+  font-weight: 800;
+  font-size: 18px;
 }
 .product {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background: #fff;
-    color: #141416;
-    width: calc(25% - 30px);
-    margin: 0 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  color: #141416;
+  width: calc(25% - 30px);
+  margin: 0 15px 30px 15px;
 }
 .product .productImage {
-    width: 100%;
-    padding-bottom: 20px;
-    transition: transform 1s;
+  width: 100%;
+  padding-bottom: 20px;
+  transition: transform 1s;
 }
 .product:hover .productImage {
-    transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 1280px) {
+  .product {
+    width: calc(33.33% - 30px);
+    margin: 0 15px 30px 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 20px 0;
+    }
+  .product {
+    width: calc(50% - 30px);
+    margin: 0 15px 30px 15px;
+  }
+  .productList {
+    padding-top: 10px;
+  }
+  .categoryItem {
+    margin-right: 16px;
+    margin-bottom: 20px;
+  }
+  .subTitle {
+    font-size: 10px;
+  }
+  .productPrice {
+    font-size: 16px;
+  }
+  .productName {
+    font-size: 14px;
+  }
 }

@@ -6,6 +6,7 @@
     display: flex;
     list-style: none;
     padding: 0 15px;
+    flex-wrap: wrap;
 }
 .categoryItemButton {
     background-color: transparent;
